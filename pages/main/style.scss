@@ -3,7 +3,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 30px;
 }
 @import 'nullstyle';
@@ -15,8 +15,9 @@ body{
     margin-left:  auto;
     max-width: 1280px; 
 }
-
+//nav
 nav{
+    margin-top: 10px;
     .logo{
         .logo-image{
             width: 40%;
@@ -26,21 +27,84 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+//select
         div{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            gap:20px;
+            @include text;
+            select{
+                background-color: #fff;
+                border: 0;
+                background-color: #fff;
+                position: relative;
+                transition: all 1s;
+                option{
+                    background-color: #fff;
+                    border: 0;
+                }
+                
+            }
+            select:hover{
+                cursor: pointer;
+            }
+            select:focus{
+                outline: none;
+            }
+//sign up, log in
+            .signup{
+                @include text;
+                border: 2px solid rgba($color: #1E2E4E, $alpha: 0);
+                background-color: #fff;
+                padding: 8px 20px;
+                border-radius: 35px;
+                color:#000;
+                text-decoration: none;
+                transition: all 1s;
+            }
+            .signup:hover{
+                border: 2px solid rgba($color: #1E2E4E, $alpha: 1);
+                background-color:#f4f3f3; 
+            }
+            .login{
+                @include text;
+                border: 2px solid rgba($color: #1E2E4E, $alpha: 1);
+                background-color: #fff;
+                padding: 8px 20px;
+                border-radius: 35px;
+                color:#000;
+                text-decoration: none;
+                transition: all 1s;
+            }
+            .login:hover{
+                background-color: #1E2E4E;
+                color:#fff;
+            }
+            
         }
+//links to site
         ul{
-            gap:55px;
+            gap:20px;
             display: flex;
             li{
                 list-style-type: none;
                 a{
+                    padding: 8px 20px;
                     text-decoration: none;
                     color:#000;
                     @include text;
+                    transition: all 1s;
+                    border: 2px solid rgba($color: #1E2E4E, $alpha: 0);
+                    border-radius: 20px;
+                }
+                a:hover{
+                    border: 2px solid  #1E2E4E;
+                    background-color:#f4f3f3; 
                 }
             }
         }
+        
     }
 }
+
