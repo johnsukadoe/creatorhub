@@ -1,2 +1,2 @@
 # creatorhub
-https://johnsukadoe.github.io/creatorhub/
+https://johnsukadoe.github.io/creatorhub/pages/main
