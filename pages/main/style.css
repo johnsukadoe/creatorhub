@@ -50,6 +50,7 @@ input, button, textarea, select {
 }
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
 }
 
 .wrapper {
@@ -59,7 +60,7 @@ body {
 }
 
 nav {
-  margin-top: 10px;
+  padding: 10px 0;
 }
 nav .logo .logo-image {
   width: 40%;
@@ -156,4 +157,69 @@ nav .nav ul li a {
 nav .nav ul li a:hover {
   border: 2px solid #1E2E4E;
   background-color: #f4f3f3;
+}
+
+header {
+  background-color: #fff;
+}
+header .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+header .header-left h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 54px;
+}
+header .header-left h1 p {
+  font-weight: 800;
+}
+header .header-left .description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-weight: 500;
+  line-height: 24px;
+}
+header .header-left .learn-more {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+header .header-left .learn-more div {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 250px;
+  background-color: #1E2E4E;
+}
+header .header-left .learn-more div p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+header .header-left .learn-more div span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .header-left .learn-more div svg {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */

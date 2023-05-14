@@ -9,6 +9,7 @@
 @import 'nullstyle';
 body{
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 .wrapper {
     margin-right: auto;
@@ -17,7 +18,7 @@ body{
 }
 //nav
 nav{
-    margin-top: 10px;
+    padding: 10px 0;
     .logo{
         .logo-image{
             width: 40%;
@@ -108,3 +109,60 @@ nav{
     }
 }
 
+//header
+header{
+    background-color: #fff;
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+//header-left
+    .header-left{
+        h1{
+            @include text;
+            font-weight: 400;
+            font-size: 2.2rem;
+            line-height: 54px;
+            p{
+                font-weight: 800;
+            }
+        }
+        .description{
+            @include text;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        //card link
+        .learn-more{
+            @include text;
+            text-decoration: none;
+            color:#fff;
+            div{
+                margin-top: 50px;
+                padding: 20px;
+                border-radius: 15px;
+                max-width: 250px;
+                background-color: #1E2E4E;
+                p{
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    margin-bottom: 15px;
+                }
+                span{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                svg{
+                    width: 35px;
+                    height: 35px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
