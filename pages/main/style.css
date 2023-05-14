@@ -83,17 +83,17 @@ nav .nav div {
 }
 nav .nav div select {
   background-color: #fff;
-  border: 0;
-  background-color: #fff;
   position: relative;
-  transition: all 1s;
+  border: 0;
+  border-bottom: 2px solid rgba(30, 46, 78, 0);
+  transition: all 0.5s;
 }
 nav .nav div select option {
   background-color: #fff;
-  border: 0;
 }
 nav .nav div select:hover {
   cursor: pointer;
+  border-bottom: 2px solid #1e2e4e;
 }
 nav .nav div select:focus {
   outline: none;
@@ -110,7 +110,7 @@ nav .nav div .signup {
   border-radius: 35px;
   color: #000;
   text-decoration: none;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 nav .nav div .signup:hover {
   border: 2px solid #1e2e4e;
@@ -128,7 +128,7 @@ nav .nav div .login {
   border-radius: 35px;
   color: #000;
   text-decoration: none;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 nav .nav div .login:hover {
   background-color: #1E2E4E;
@@ -150,7 +150,7 @@ nav .nav ul li a {
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 30px;
-  transition: all 1s;
+  transition: all 0.5s;
   border: 2px solid rgba(30, 46, 78, 0);
   border-radius: 20px;
 }
@@ -204,6 +204,7 @@ header .header-left .learn-more div {
   border-radius: 15px;
   max-width: 250px;
   background-color: #1E2E4E;
+  transition: all 0.5s;
 }
 header .header-left .learn-more div p {
   font-family: "Montserrat";
@@ -217,9 +218,22 @@ header .header-left .learn-more div span {
   font-weight: 400;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+}
+header .header-left .learn-more div span:hover {
+  color: rgb(255, 255, 255);
 }
 header .header-left .learn-more div svg {
   width: 35px;
   height: 35px;
   vertical-align: middle;
+  transition: all 1s;
+}
+header .header-left .learn-more div:hover {
+  box-shadow: 1px 6px 27px 3px rgba(23, 36, 47, 0.29);
+  transform: translateY(-10px);
+}
+
+.translateArrow {
+  transform: translateX(30px);
 }/*# sourceMappingURL=style.css.map */

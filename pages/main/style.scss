@@ -37,18 +37,19 @@ nav{
             @include text;
             select{
                 background-color: #fff;
-                border: 0;
-                background-color: #fff;
                 position: relative;
-                transition: all 1s;
+                border: 0;
+                border-bottom: 2px solid rgba($color: #1E2E4E, $alpha: 0);
+                transition: all 0.5s;
                 option{
                     background-color: #fff;
-                    border: 0;
                 }
                 
             }
             select:hover{
                 cursor: pointer;
+                border-bottom: 2px solid rgba($color: #1E2E4E, $alpha: 1);
+
             }
             select:focus{
                 outline: none;
@@ -62,7 +63,7 @@ nav{
                 border-radius: 35px;
                 color:#000;
                 text-decoration: none;
-                transition: all 1s;
+                transition: all 0.5s;
             }
             .signup:hover{
                 border: 2px solid rgba($color: #1E2E4E, $alpha: 1);
@@ -76,7 +77,7 @@ nav{
                 border-radius: 35px;
                 color:#000;
                 text-decoration: none;
-                transition: all 1s;
+                transition: all 0.5s;
             }
             .login:hover{
                 background-color: #1E2E4E;
@@ -95,7 +96,7 @@ nav{
                     text-decoration: none;
                     color:#000;
                     @include text;
-                    transition: all 1s;
+                    transition: all 0.5s;
                     border: 2px solid rgba($color: #1E2E4E, $alpha: 0);
                     border-radius: 20px;
                 }
@@ -144,6 +145,7 @@ header{
                 border-radius: 15px;
                 max-width: 250px;
                 background-color: #1E2E4E;
+                transition: all 0.5s;
                 p{
                     font-family: 'Montserrat';
                     font-weight: 500;
@@ -156,13 +158,30 @@ header{
                     font-weight: 400;
                     font-size: 1.3rem;
                     color: rgba(255, 255, 255, 0.7);
+                    transition: all 0.5s;
+                }
+                span:hover{
+                    color: rgba(255, 255, 255, 1);
                 }
                 svg{
                     width: 35px;
                     height: 35px;
                     vertical-align: middle;
+                    transition: all 1s;
                 }
+            }
+            div:hover{
+                -webkit-box-shadow: 1px 6px 27px 3px rgba(23, 36, 47, 0.29);
+                -moz-box-shadow: 1px 6px 27px 3px rgba(23, 36, 47, 0.29);
+                box-shadow: 1px 6px 27px 3px rgba(23, 36, 47, 0.29);
+                transform: translateY(-10px);
             }
         }
     }
+}
+
+
+//js classes
+.translateArrow{
+    transform:translateX(30px);
 }
