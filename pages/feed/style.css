@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
@@ -62,38 +63,64 @@ body {
 nav {
   padding: 15px;
 }
+nav .nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
 nav .nav-left .logo-image {
   width: 100px;
+}
+nav .nav-left #search {
+  width: 300px;
+  position: relative;
+}
+nav .nav-left #search::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/icons/search-icon.svg"); /* Замените путь на реальный путь к изображению */
+  background-size: cover;
+}
+nav .nav-left #search-input {
+  padding: 10px 15px 10px 50px;
+  border: 2px solid #1E2E4E;
+  border-radius: 35px;
 }
 nav .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-nav .nav div {
+nav .nav .nav-right {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
-nav .nav div select {
+nav .nav .nav-right select {
   background-color: #fff;
   position: relative;
   border: 0;
   border-bottom: 2px solid rgba(30, 46, 78, 0);
   transition: all 0.5s;
 }
-nav .nav div select option {
+nav .nav .nav-right select option {
   background-color: #fff;
 }
-nav .nav div select:hover {
+nav .nav .nav-right select:hover {
   cursor: pointer;
   border-bottom: 2px solid #1e2e4e;
 }
-nav .nav div select:focus {
+nav .nav .nav-right select:focus {
   outline: none;
 }
-nav .nav div .avatar {
+nav .nav .nav-right .avatar {
   width: 50px;
   height: 50px;
   border: 1px solid #1e2e4e;

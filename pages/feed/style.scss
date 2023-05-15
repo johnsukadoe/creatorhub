@@ -14,9 +14,37 @@ body{
 //nav
 nav{
     padding: 15px;
+
+
     .nav-left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:50px;
+//logo
         .logo-image{
             width: 100px;
+        }
+//search-input
+        #search{
+            width: 300px;
+            position: relative;
+        }
+        #search::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-image: url("../../assets/icons/search-icon.svg"); /* Замените путь на реальный путь к изображению */
+            background-size: cover;
+        }
+        #search-input{
+            padding: 10px 15px 10px 50px;
+            border: 2px solid #1E2E4E;
+            border-radius: 35px;
         }
     }
     .nav{
@@ -24,11 +52,11 @@ nav{
         flex-direction: row;
         justify-content: space-between;
 //select
-        div{
+        .nav-right{
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap:20px;
+            gap:40px;
             
             select{
                 background-color: #fff;
