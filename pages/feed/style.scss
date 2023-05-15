@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'nullstyle';
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+.wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 1280px; 
+}
+//nav
+nav{
+    padding: 15px;
+    .nav-left{
+        .logo-image{
+            width: 100px;
+        }
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+//select
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:20px;
+            
+            select{
+                background-color: #fff;
+                position: relative;
+                border: 0;
+                border-bottom: 2px solid rgba($color: #1E2E4E, $alpha: 0);
+                transition: all 0.5s;
+                option{
+                    background-color: #fff;
+                }
+                
+            }
+            select:hover{
+                cursor: pointer;
+                border-bottom: 2px solid rgba($color: #1E2E4E, $alpha: 1);
+
+            }
+            select:focus{
+                outline: none;
+            }
+//username, account avatar
+            .avatar{
+                width: 50px;
+                height: 50px;
+                border: 1px solid rgba($color: #1E2E4E, $alpha: 1);
+                border-radius: 35px;
+            }
+        }        
+    }
+}
+
+
